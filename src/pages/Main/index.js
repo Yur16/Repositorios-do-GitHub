@@ -26,7 +26,7 @@ export default class Main extends Component {
   componentDidUpdate(_, prevState) {
   	const { repositories } = this.state; 
 
-  	if(prevState.repositories != repositories) {
+  	if(prevState.repositories !== repositories) {
   	  localStorage.setItem('repositories', JSON.stringify(repositories));	
   	}
   };
